@@ -1,0 +1,24 @@
+.text-normal {
+    font-family: Comfortaa, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.text-big {
+    font-family: Comfortaa, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.no-link {
+    text-decoration: none;
+    color: inherit;
+}
