@@ -9,6 +9,10 @@
     background-color: var(--clr-yellow-15);
 }
 
+.block-yellow-30 {
+    background-color: var(--clr-yellow-30);
+}
+
 .block-orange-20 {
     background-color: var(--clr-orange-20);
 }
@@ -120,8 +124,71 @@
     border-radius: 25px;
 }
 
-@media screen and (max-width: 1540px) {
+.block-achievements {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 50px;
+}
+.block-achievements__item{
+    padding: 0 20px;
+    border-radius: 25px;
+}
+.block-achievements__item .text-shrikhand{
+    display: block;
+}
+.block-fact__wrapper{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.block-fact {
+    width: calc(calc(100% - 70px)/3);
+    border-radius: 25px;
+}
+.block-fact__title{
+    padding: 20px 0;
+    margin: 0;
+    border-radius: 25px;
+}
+.block-fact__text{
+    margin: 20px;
+}
+.block-number__wrapper {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.block-number{
+    position: relative;
+    width: calc(calc(100% - 150px)/2);
+    padding: 30px;
+    border-radius: 25px;
+}
+.block-number__bg{
+    bottom: 0;
+    right: 20px;
+    z-index: -1;
+    position: absolute;
+    font-family: Shrikhand, cursive;
+    font-size: 200px;
+    line-height: 200px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    color: var(--clr-orange-50);
+    text-align: right;
+}
+,block-number .text-big{
+    margin-top: 0;
+}
+.block-number .text-normal{
+    margin-bottom: 0;
+}
 
+@media screen and (max-width: 1540px) {
     .block {
         --block-width: calc(100% - 80px);
         margin: 30px 40px;
@@ -164,6 +231,13 @@
 
     .block-pagination__item{
         padding: 8px 20px;
+    }
+    .block-achievements {
+        flex-wrap: wrap;
+    }
+    .block-achievements__item {
+        width: calc(calc(100% - 150px) / 2);
+        flex-direction: row;
     }
 }
 
@@ -212,6 +286,15 @@
     }
     .block .text-normal{
         padding: 0 20px;
+    }
+    .block-fact {
+        width: 100%;
+    }
+    .block-number {
+        width: 100%;
+    }
+    .block-achievements__item {
+        width: 100%;
     }
 }
 
